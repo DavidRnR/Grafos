@@ -4,6 +4,6 @@
 
 Dado un Grafo hallar el camino mas corto a un Vértice destino desde el Vértice 0.
 
-![alt text](https://raw.githubusercontent.com/davidrnr/grafo/caminomascorto/path/to/grafo.png)
+![alt text](https://github.com/DavidRnR/Grafos/blob/master/CaminoMasCorto/grafo.png)
 
 ## Martín, Carlos David
