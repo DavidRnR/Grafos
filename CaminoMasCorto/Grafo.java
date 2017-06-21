@@ -136,7 +136,7 @@ public class Grafo {
 		
 
 
-		// Desde el v0 al v5 hay conexión - Es true!
+		// Desde el v0 al v8 
 		grafo.BFS(v8);
 
 	}
