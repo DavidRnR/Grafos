@@ -35,15 +35,19 @@ public class Main {
 		
 		cant++;
 		
-		if(n.getDer() != null) {
-			cant += getCantidadDescendientes(0, n.getDer());			
-		}
-		if(n.getIzq() != null)
-			cant += getCantidadDescendientes(0, n.getIzq());
+		Nodo nuevo = new Nodo(cant);
 		
+		if(n.getDer() != null) {
+			cant += getCantidadDescendientes(0, n.getDer());
+			nuevo.setDer(new Nodo(cant));
+		}
+		if(n.getIzq() != null) {
+			cant += getCantidadDescendientes(0, n.getIzq());
+			nuevo.setIzq(new Nodo(cant));
+		}
 		// Seteo la cantidad -1 porque solo se cuentan los hijos y no el propio nodo
-		n.setValor(cant-1);
-		System.out.println(n.getValor());
+		nuevo.setValor(cant-1);
+		System.out.println(nuevo.getValor());
 		return cant;
 
 	}
